@@ -1,12 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import './index.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import App from './App';
 import Timer from './projects/timer';
 import Que from './projects/que';
 import Calc from './projects/cal';
-import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -22,6 +20,5 @@ root.render(
   </React.StrictMode>
 );
 
-reportWebVitals();
 
 
