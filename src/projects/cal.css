@@ -204,3 +204,11 @@ button:hover {
 button:focus {
     outline: none;
 }
+@media (max-width: 510px) {
+  .buttonup{
+    grid-template-columns: repeat(4, 16.5vw);
+  }
+  .calculator{
+    width: 330px;
+  }
+}
