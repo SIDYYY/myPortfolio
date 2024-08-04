@@ -12,7 +12,7 @@ root.render(
   <React.StrictMode>
     <HashRouter>
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/myPortfolio" element={<App />} />
         <Route path="/timer" element={<Timer />} />
         <Route path="/que" element={<Que />} />
         <Route path="/calc" element={<Calc />} />
