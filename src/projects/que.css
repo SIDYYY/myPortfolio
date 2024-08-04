@@ -1,0 +1,172 @@
+/* que.css */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+/* Define keyframe animation */
+@keyframes falling {
+    0% {
+      transform: translateY(-100vh); /* Start from above the screen */
+      
+    }
+    100% {
+      transform: translateY(100vh); /* Move to below the screen */
+    }
+  }
+  @keyframes swinging {
+    0%, 100%{
+      transform: translateX(-120px); 
+    }
+    50% {
+      transform: translateX(0px); 
+    }
+  }
+  .upper h1{
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    font-size: 45px;
+    color: rgb(53, 28, 28);
+  }
+
+  .falling1 {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden; 
+    pointer-events: none; 
+    z-index: 1; 
+  }
+  
+  .falling1 div {
+    position: absolute;
+    width: 50px; 
+    height: 50px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: swinging 10s ease-in-out infinite;; 
+    
+  }
+  .falling1 img{
+    width: 700px;
+  }
+  
+  .Uno1 {
+    top: 100px;
+    left: 10%; 
+  }
+  
+  .Dos1 {
+    top: 450px;
+    left: 30%; 
+  }
+  
+  .Tres1 {
+    top: 120px;
+    left: 50%; 
+  }
+  
+  .Kwatro1 {
+    top: 385px;
+    left: 70%; 
+  }
+  
+  .Singko1 {
+    top: 240px;
+    left: 90%;
+  }
+  
+#whole {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    width: 100vw;  /* Full viewport width */
+    background: linear-gradient(to right, #965454, #e4d0c9); /* Black and white gradient background */
+    overflow: hidden;
+    position: relative; 
+}
+
+.butt,.Start, .close{
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 10px;
+    z-index: 1;
+    box-shadow: 5px 4px 3px 2px rgba(255, 255, 255, 0.5);
+}
+
+.butt:hover {
+    background-color: #ff3d2f;
+    transform: scale(1.05); 
+}
+
+.Start:hover{
+  color: black;
+}
+button:hover{
+  color: black;
+}
+
+input[type='text'] {
+    border: 2px solid #ff6f61;
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 18px;
+    width: 80%;
+    max-width: 400px;
+    margin: 10px 0;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1.head {
+    color: #ff3d2f;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+.the-questions {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+}
+.congrats-message {
+    background: #d4edda;
+    border-radius: 12px;
+    padding: 30px;
+    color: #155724;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 83%;
+    max-width: 600px;
+}
+
+.modal-content {
+    background: rgba(255, 255, 255, 0.9); 
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 5;
+    position:relative;
+
+}

@@ -1,0 +1,206 @@
+@keyframes swinging {
+    0%, 100%{
+      transform: translateX(-120px); 
+    }
+    50% {
+      transform: translateX(0px); 
+    }
+  }
+  @keyframes falling {
+    0% {
+      transform: translateY(-100vh) rotate(0deg); /* Start from above the screen */
+      
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg); /* Move to below the screen */
+      
+    }
+  }
+  .upper h1{
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    z-index: 5;
+    position: relative;
+    font-size: 45px;
+    color: rgb(53, 28, 28);
+    
+  }
+  .swinging {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden; 
+    pointer-events: none; 
+    z-index: 1; 
+  }
+  
+  .swinging div {
+    position: absolute;
+    width: 50px; 
+    height: 50px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: swinging 10s ease-in-out infinite;; 
+    font-size: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 100%;
+    
+  }
+  .swinging img{
+    width: 700px;
+  }
+
+  .falling {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden; 
+    pointer-events: none; 
+    z-index: 1; 
+  }
+  
+  .falling div {
+    position: absolute;
+    width: 50px; 
+    height: 50px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: falling 10s ease-in-out infinite;; 
+    font-size: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 100%;
+    
+  }
+  .falling img{
+    width: 700px;
+  }
+  
+  .Uno {
+    top: 1000px;
+    left: 10%; 
+    transform: rotateX(360deg);
+  }
+  
+  .Dos {
+    top: 940px;
+    left: 30%; 
+  }
+  
+  .Tres {
+    top: 450px;
+    left: 50%; 
+  }
+  
+  .Kwatro {
+    top: 655px;
+    left: 70%; 
+  }
+  
+  .Singko {
+    top: 725px;
+    left: 90%;
+  }
+  .Uno2 {
+    top: 500px;
+    left: 10%; 
+  }
+  
+  .Dos2 {
+    top:740px;
+    left: 30%; 
+  }
+  
+  .Tres2 {
+    top: 450px;
+    left: 50%; 
+  }
+  
+  .Kwatro2 {
+    top: 655px;
+    left: 70%; 
+  }
+  
+  .Singko2 {
+    top: 725px;
+    left: 90%;
+  }
+  #cal{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+.calculator {
+    background: #ffffff;
+    border: 5px solid #000;
+    border-radius: 15px;
+    box-shadow: 10px 10px 0 #000;
+    padding: 35px;
+    width: 370px;
+    z-index: 3;
+    position: relative;
+}
+
+.display {
+    background: #eee;
+    border: 3px solid #000;
+    border-radius: 5px;
+    font-size: 2.5em;
+    padding: 15px;
+    text-align: right;
+    margin-bottom: 15px;
+    box-shadow: inset 3px 3px 0 #000;
+}
+
+.buttonup {
+    display: grid;
+    grid-template-columns: repeat(4, 4.5vw);
+    gap: 10px;
+}
+
+#num {
+    background: #fff;
+    border: 2px solid #000;
+    color: black;
+    border-radius: 5px;
+    font-size: 1.5em;
+    padding: 14px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 3px 3px 0 #000;
+}
+
+#num:active {
+    background: #ddd;
+    transform: translate(3px, 3px);
+    box-shadow: 0 0 0 #000;
+}
+
+.operator {
+    background: #ffcc00;
+}
+
+.equals {
+    background: #00ccff;
+}
+
+button:hover {
+    background: #f0f0f0;
+}
+
+button:focus {
+    outline: none;
+}
