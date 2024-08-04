@@ -5,7 +5,9 @@ import '../style/portfolio.css';
 function Skills() {
   return (
     <div id="about-holder">
+      
       <div className="banner">
+        
         <div className="image-hold">
           <img src={citclogo} alt="logo" />
         </div>

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import me from '../images/Me.jpg.png';
 import '../style/portfolio.css';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import cloud from '../images/cloud.jpg.png'
 
 function Home() {
   const [Open, setOpen] = useState(false);
@@ -16,6 +17,11 @@ function Home() {
 
   return (
     <div className="home-container" id="home">
+      <div className="swinginghome">
+            <div className='Dos2'><img src={cloud} alt='leave'/></div>
+            <div className='Tres2'><img src={cloud} alt='leave'/></div>
+            <div className='Kwatro2'><img src={cloud} alt='leave'/></div>
+            </div>
       <div className="head-container">
         <nav>
           <div className="menu-icon" onClick={toggleMenu}>
