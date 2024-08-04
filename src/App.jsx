@@ -1,4 +1,5 @@
   import './style/portfolio.css';
+  import React from 'react';
   import Home from './sections/home'
   import Skills from './sections/abouts'
   import Proj from './sections/proj'

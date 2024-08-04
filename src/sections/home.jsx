@@ -28,10 +28,10 @@ function Home() {
             {Open ? <FaTimes /> : <FaBars />}
           </div>
           <ul className={Open ? "nav-links active" : "nav-links"}>
-            <li><a href="#home" alt="home">Home</a></li>
-            <li><a href="#about-holder" alt="abouts">About</a></li>
-            <li><a href="#proj" alt="projects">Projects</a></li>
-            <li><a href="#con" alt="contact">Contact</a></li>
+            <li><a href="#" title='home'>Home</a></li>
+            <li><a href="#about-holder" title='about'>About</a></li>
+            <li><a href="#proj" title='project'>Projects</a></li>
+            <li><a href="#con" title='contact'>Contact</a></li>
           </ul>
         </nav>
       </div>
