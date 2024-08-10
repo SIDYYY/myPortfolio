@@ -8,13 +8,17 @@
   }
   .Dos2{
     left: 0;
-    filter: drop-shadow(10px 7px 10px blue)
+    filter: drop-shadow(10px 7px 10px rgb(165, 165, 209))
   }
   .Tres3{
     left: 0;
+    filter: drop-shadow(10px 7px 10px rgb(165, 165, 209))
+
   }
   .Kwatro2{
     left: -100px;
+    filter: drop-shadow(10px 7px 10px rgb(165, 165, 209))
+
   }
 /* portfolio.css */
 * {
