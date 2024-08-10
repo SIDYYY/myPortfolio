@@ -6,8 +6,9 @@
       transform: translateX(1000px); 
     }
   }
-  .Uno2{
+  .Dos2{
     left: 0;
+    filter: drop-shadow(10px 7px 10px blue)
   }
   .Tres3{
     left: 0;
